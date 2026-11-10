@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishGuard | Phishing Awareness Training</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">🛡️ PhishGuard</div>
+    <span>CodeAlpha Cyber Security Internship</span>
+  </header>
+
+  <main class="container">
+    <section id="home" class="card hero">
+      <div class="tag">CYBERSECURITY AWARENESS</div>
+      <h1>Think Before You <span>Click.</span></h1>
+      <p>
+        Learn to recognize phishing emails, fake websites,
+        suspicious links, and social engineering attacks.
+      </p>
+
+      <div class="stats">
+        <div><strong>10</strong><small>Questions</small></div>
+        <div><strong>5–10</strong><small>Minutes</small></div>
+        <div><strong>100%</strong><small>Free</small></div>
+      </div>
+
+      <button id="startBtn" class="primary-btn">
+        Start Quiz →
+      </button>
+      <p class="small-text">Test your knowledge. Stay safe online.</p>
+    </section>
+
+    <section id="quiz" class="card hidden">
+      <div class="quiz-top">
+        <span id="questionCount">Question 1 of 10</span>
+        <span id="scoreLabel">Score: 0</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <div class="tag">PHISHING AWARENESS QUIZ</div>
+      <h2 id="question">Question appears here</h2>
+      <div id="options" class="options"></div>
+
+      <div id="feedback" class="feedback hidden"
+           aria-live="polite"></div>
+
+      <button id="nextBtn" class="primary-btn hidden">
+        Next Question →
+      </button>
+    </section>
+
+    <section id="result" class="card hidden">
+      <div class="result-icon">🏆</div>
+      <div class="tag">QUIZ COMPLETED</div>
+      <h1 id="resultTitle">Well done!</h1>
+      <p id="resultMessage"></p>
+
+      <div class="score-circle">
+        <strong id="finalScore">0/10</strong>
+        <span>Your Score</span>
+      </div>
+
+      <p id="percentage"></p>
+      <div id="review" class="review-list"></div>
+
+      <button id="restartBtn" class="primary-btn">
+        Try Again ↻
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>PhishGuard | Educational Project by CodeAlpha Intern</p>
+    <p>Stay alert. Verify before you trust.</p>
+  </footer>
+</body>
+</html>
